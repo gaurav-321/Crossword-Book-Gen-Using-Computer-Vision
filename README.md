@@ -20,8 +20,6 @@ This is a Flask server that generates crossword puzzle books based on input. It 
 To run the server, use the command python app.py. Then, go to http://localhost:80 in your web browser to access the crossword puzzle generator. Follow the prompts on the webpage to generate the crossword puzzle book.
 
 ## File Structure
-Copy code
-.
 - ├── app.py
 - ├── main.py
 - ├── static
