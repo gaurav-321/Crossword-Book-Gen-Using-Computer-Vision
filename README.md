@@ -25,7 +25,7 @@ Copy code
 - ├── app.py
 - ├── main.py
 - ├── static
- -│   ├── back
+ - │   ├── back
  - │   ├── files
  - │   ├── fonts 
  - │   ├── output
