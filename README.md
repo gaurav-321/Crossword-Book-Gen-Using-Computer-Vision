@@ -1,30 +1,85 @@
-# Crossword Book Gen Using Computer Vision
-This is a Flask server that generates crossword puzzle books based on input. It uses cv2 for image processing and random for generating random file names for uploaded files.
+# Crossword Book Generator
+
+Crossword Book Generator is a Python program that leverages Flask, OpenCV (cv2), and random to create custom crossword puzzle books. It provides an interactive web interface for users to upload CSV files and media, process the data, and generate output in PDF format.
 
 ## Features
-- User can upload a CSV file containing the crossword puzzle clues and solutions
-- User can select a font for the crossword puzzle book
-- User can specify whether the header should be bold or not
-- User can specify the size of the header
-- User can specify the color of the header
-- User can enable pagination for the crossword puzzle book
-- User can specify the size of the words in the crossword puzzle
-- User can specify whether the words in the crossword puzzle should be bold or not
-- User can upload multiple images to be used as the background for the crossword puzzle book
-## Requirements
-- Python 3
-- Flask
-- cv2
-- random
-## Usage
-To run the server, use the command python app.py. Then, go to http://localhost:80 in your web browser to access the crossword puzzle generator. Follow the prompts on the webpage to generate the crossword puzzle book.
 
-## File Structure
-- ├── app.py
-- ├── main.py
-- ├── static
- - │   ├── back
- - │   ├── files
- - │   ├── fonts 
- - │   ├── output
- - │   ├── templates
+- **Flask Web Interface**: Provides a user-friendly interface for uploading CSV files and media.
+- **Image Processing**: Utilizes OpenCV to handle background selection and font styling.
+- **CSV Parsing**: Extracts crossword clues and solutions from uploaded CSV files.
+- **Dynamic PDF Generation**: Generates custom crossword puzzle books in PDF format based on user input.
+
+## Installation
+
+To install the dependencies, run:
+
+```bash
+pip install Flask cv2 random
+```
+
+## Usage
+
+### Running the Application
+
+1. Clone the repository or download the source code.
+2. Navigate to the project directory.
+3. Run the application using:
+
+```bash
+python app.py
+```
+
+4. Open your web browser and go to `http://127.0.0.1:5000/` to access the interface.
+
+### Uploading Files
+
+- **CSV File**: Upload a CSV file containing crossword clues and solutions.
+- **Media File**: Upload media files (images, fonts) for background selection and styling.
+
+### Generating Output
+
+After uploading the necessary files, click on the "Generate" button. The program will process the data and generate an output PDF file named `output.pdf`.
+
+## Configuration
+
+No additional configuration is required beyond installing dependencies and running the application.
+
+## Tests
+
+This project does not include automated tests at this time.
+
+## Project Structure
+
+```
+CrosswordBookGenerator/
+├── app.py
+├── main.py
+├── CrosswordBookGenerator/
+│   ├── __init__.py
+│   ├── CrosswordBookGenerator.py
+│   ├── ImageProcessor.py
+│   ├── CSVParser.py
+│   └── HTMLTemplates.py
+├── templates/
+│   └── index.html
+└── static/
+    └── styles.css
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+1. Fork the project on GitHub.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to modify this README to better fit your specific needs or add more sections as required!
